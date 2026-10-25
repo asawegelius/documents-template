@@ -1,12 +1,13 @@
-# Use Case Template
+---
+id: UC-DOMAIN-000
+title: "Replace with the actor goal"
+status: draft
+owner: "Unassigned — resolve before approval"
+requirements: []
+decisions: []
+---
 
-## ID
-
-UC-TEMPLATE-001
-
-## Title
-
-Short descriptive name
+# UC-DOMAIN-000: Title
 
 ## Goal
 
@@ -19,38 +20,41 @@ Describe the outcome the actor is trying to achieve.
 
 ## Trigger
 
-What starts this use case?
+What starts the flow?
 
 ## Preconditions
 
-- Condition 1
-- Condition 2
+- Required starting state.
 
 ## Postconditions
 
-- Success outcome
-- State changes or side effects
+- Success:
+- Failure:
 
-## Main Flow
+## Main flow
 
-1. Step 1
-2. Step 2
-3. Step 3
+1. Actor action.
+2. System response.
+3. Observable outcome.
 
-## Alternative Flows
+## Alternative and failure flows
 
-- Alternative or error path
+- A1 (diverges at step N): condition, system response and final state.
 
-## Data Notes
+## Data notes
 
 - Inputs:
 - Outputs:
-- Sensitive data involved:
+- Sensitive data:
 
-## Linked Requirements
+## Related artifacts
 
-- REQ-TEMPLATE-001
+Add relative Markdown links for the IDs in `requirements` and `decisions`. Test cases declare their use case links in `use_cases`; the coverage view supplies reverse navigation.
 
-## Linked Tests
+## Open questions
 
-- Optional test case IDs
+Unresolved behavior, impact and responsible role, or "None".
+
+## Author guidance
+
+Populate `requirements` with at least one existing requirement ID. Replace placeholders and remove this section. Follow [CONVENTIONS.md](../CONVENTIONS.md).

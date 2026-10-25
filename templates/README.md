@@ -1,45 +1,40 @@
 # Templates
 
-This folder contains the canonical reusable templates for this repository.
+Canonical reusable starting documents. Copy them into project folders; keep live records out of this directory.
 
-These templates are meant to support two goals:
+## Core traceability templates
 
-1. Make new documents easier to start consistently.
-2. Act as the seed for a future standalone documentation template project.
+| Template | Destination | Responsibility |
+|:---------|:------------|:---------------|
+| [Requirement](requirements-template.md) | `requirements/` | One testable requirement with acceptance criteria |
+| [Use case](use-case-template.md) | `use-cases/` | Actor goal and main/alternative flows |
+| [Test case](test-case-template.md) | `test-cases/` | Verification design and execution evidence |
+| [ADR](adr-template.md) | `decisions/` | Decision context, alternatives and consequences |
+| [Coverage matrix](traceability-matrix-template.md) | `traceability/` | Derived requirement coverage and gaps |
 
-## Available Templates
+Core records use the YAML metadata and relationships defined in [CONVENTIONS.md](../CONVENTIONS.md). Follow the [worked example](../examples/README.md).
 
-- [requirements-template.md](requirements-template.md)
-- [use-case-template.md](use-case-template.md)
-- [traceability-matrix-template.md](traceability-matrix-template.md)
-- [security-events-template.md](security-events-template.md)
-- [adr-template.md](adr-template.md)
-- [service-overview-template.md](service-overview-template.md)
-- [api-contract-template.md](api-contract-template.md)
-- [database-design-review-template.md](database-design-review-template.md)
-- [logging-standard-template.md](logging-standard-template.md)
-- [state-model-template.md](state-model-template.md)
-- [test-case-template.md](test-case-template.md)
-- [test-strategy-template.md](test-strategy-template.md)
-- [threat-model-template.md](threat-model-template.md)
-- [solo-kanban-board-template.md](solo-kanban-board-template.md)
+## Supporting templates
 
-## How to Use
+Choose and document a destination folder when adopting these templates. Their current formats are descriptive Markdown; they do not yet share the core metadata contract.
 
-1. Copy the template you need.
-2. Rename it to match the module or decision you are documenting.
-3. Remove guidance text that is no longer needed.
-4. Link the document to requirements, use cases, and tests where relevant.
+- [Service overview](service-overview-template.md)
+- [API contract](api-contract-template.md)
+- [Database design review](database-design-review-template.md)
+- [State model](state-model-template.md)
+- [Threat model](threat-model-template.md)
+- [Logging standard](logging-standard-template.md)
+- [Security events](security-events-template.md)
+- [Test strategy](test-strategy-template.md)
+- [Solo Kanban board](solo-kanban-board-template.md)
 
-## Naming Guidance
+## How to use
 
-- Requirements: `domain-requirements.md`
-- Use cases: `UC-DOMAIN-001-short-name.md`
-- ADRs: `ADR-001-short-title.md`
-- State models: `entity-state-model.md`
-- Threat models: `module-threat-model.md`
+1. Choose only the templates needed for the change.
+2. Copy to the destination folder and allocate a stable ID where applicable.
+3. Fill in metadata and content, replacing all placeholders.
+4. Keep canonical relationships in metadata and navigable relative links in the body.
+5. Remove author guidance sections; submit for review.
+6. Update the affected coverage view.
 
-## Note
-
-Some older template files still exist in their original folders as compatibility pointers.
-Use the files in this folder as the canonical source from now on.
+Templates intentionally contain sample IDs and empty fields. Exclude them from live project ID and coverage validation. Changes to a template affect future copies; review existing records separately rather than silently rewriting them.

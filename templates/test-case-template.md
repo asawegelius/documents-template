@@ -1,56 +1,57 @@
-# Test Case Template
+---
+id: TEST-DOMAIN-000
+title: "Replace with the behavior being checked"
+status: draft
+owner: "Unassigned — resolve before approval"
+verifies: []
+use_cases: []
+decisions: []
+execution_status: not_run
+---
 
-## ID
+# TEST-DOMAIN-000: Title
 
-`TEST-DOMAIN-001`
+## Purpose and test layer
 
-## Title
+State the risk or behavior checked and choose the relevant layer: unit, component, persistence/migration, contract, security/audit, end-to-end or manual review.
 
-Short behavior-focused title
+## Related artifacts
 
-## Purpose
+Add relative links for IDs in `verifies`, `use_cases` and `decisions`. Identify which requirement acceptance criteria and use case paths are checked.
 
-Explain what risk or behavior this test is intended to prove.
+## Preconditions and environment
 
-## Related Artifacts
+- Required starting state and relevant configuration.
 
-- Requirements:
-- Use Cases:
-- ADRs:
-- Work Items:
+## Test data
 
-## Test Layer
-
-Choose the primary layer:
-
-- Unit
-- Component or Service
-- Persistence or Migration
-- Contract
-- Security or Audit
-- End-to-End
-
-## Preconditions
-
-- Condition 1
-- Condition 2
-
-## Test Data
-
-- Input or fixture 1
-- Input or fixture 2
+- Explicit input values or a versioned fixture reference.
 
 ## Steps
 
-1. Step 1
-2. Step 2
-3. Step 3
+1. Action.
+2. Observation or assertion.
 
-## Expected Results
+## Expected results
 
-- Result 1
-- Result 2
+- Identify the linked requirement and acceptance criterion for each observable result.
+- Include relevant state changes, outputs and forbidden side effects.
 
-## Notes
+## Automation
 
-- Optional note on automation, observability, or follow-up coverage
+Link to a concrete test file and selector/command when available. Otherwise state "Not automated" and describe manual execution.
+
+## Latest execution
+
+No execution recorded.
+
+- Time:
+- Executor:
+- Source commit:
+- Environment and fixture/configuration version:
+- Actual results:
+- Evidence:
+
+## Author guidance
+
+Populate `verifies` with at least one requirement ID; use `[]` when no use case or decision applies. Keep `not_run` until a real execution provides evidence. Replace placeholders and remove this section. Follow [CONVENTIONS.md](../CONVENTIONS.md).

@@ -1,35 +1,42 @@
+---
+id: ADR-000
+title: "Replace with the decision title"
+status: draft
+owner: "Unassigned — resolve before approval"
+related: []
+---
+
 # ADR-000: Title
-
-## Status
-
-Proposed
 
 ## Context
 
-What problem are we solving? What constraints matter?
+What problem are we solving? What constraints and requirements matter?
 
 ## Decision
 
-Describe the decision clearly and directly.
+Describe the proposed or approved decision. The front matter status indicates its review state.
+
+## Alternatives considered
+
+- Alternative and reason for rejecting or selecting it.
 
 ## Consequences
 
-### Positive
+- Benefits:
+- Costs, risks and tradeoffs:
 
-- Benefit 1
-- Benefit 2
+## Related artifacts
 
-### Negative
+Add relative links for IDs in `related`.
 
-- Tradeoff 1
-- Tradeoff 2
+## Follow-up work
 
-## Alternatives Considered
+Tasks, owners and acceptance conditions, or "None".
 
-- Alternative A
-- Alternative B
+## Replacement history
 
-## Follow-Up Work
+If superseded, link to the replacing ADR and explain why this record is deprecated.
 
-- Task 1
-- Task 2
+## Author guidance
+
+Replace placeholders and remove this section. Use the common review statuses from [CONVENTIONS.md](../CONVENTIONS.md).

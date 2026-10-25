@@ -1,30 +1,39 @@
-# Requirements Template
+---
+id: REQ-DOMAIN-000
+title: "Replace with a behavior-focused title"
+status: draft
+owner: "Unassigned — resolve before approval"
+source: "Replace with a source reference or explicitly labeled assumption"
+decisions: []
+---
 
-## Purpose
+# REQ-DOMAIN-000: Title
 
-Describe what this module, service, or capability is supposed to achieve and where it fits in the system.
+## Purpose and scope
 
-## Scope
+Explain the outcome and its boundaries. Keep one independently verifiable requirement per file.
 
-- In scope:
-- Out of scope:
+## Requirement
 
-## Requirements
+State observable behavior or a measurable constraint. Avoid prescribing implementation unless that is part of the requirement.
 
-| ID | Title | Description | Priority | Notes |
-|:---|:------|:------------|:---------|:------|
-| REQ-TEMPLATE-001 | Example Requirement | Describe the required behavior clearly and testably. | High | Optional note |
+## Acceptance criteria
 
-## Non-Functional Considerations
+- AC-1: Given a defined condition, when an action occurs, an observable result must follow.
+- AC-2: Define a relevant boundary or failure condition and its expected result.
 
-- Security:
-- Privacy:
-- Availability:
-- Observability:
-- Maintainability:
+## Rationale
 
-## Related Documents
+Why is this needed? Link to the source or explain the assumption.
 
-- Use cases:
-- ADRs:
-- Traceability matrix:
+## Open questions
+
+Record unresolved facts, their impact and who should resolve them. Use "None" only after review.
+
+## Related decisions
+
+Add navigable links for IDs in `decisions`, or state "None". Use cases and tests reference this requirement in their canonical metadata; do not maintain reverse relationship lists here.
+
+## Author guidance
+
+Replace placeholders, keep the front matter ID and title consistent with the heading, and remove this section when creating a project record. Follow [CONVENTIONS.md](../CONVENTIONS.md).
